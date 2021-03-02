@@ -1,0 +1,263 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../css/Gotham-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../css/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../css/Gotham-Bold.otf") format("opentype"),
+    /* Open Type Font */ url("../css/Gotham-Bold.svg") format("svg"),
+    /* Legacy iOS */ url("../css/Gotham-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../css/Gotham-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("../css/Gotham-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../css/Gotham-Book.eot"); /* IE9 Compat Modes */
+  src: url("../css/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../css/Gotham-Book.otf") format("opentype"),
+    /* Open Type Font */ url("../css/Gotham-Book.svg") format("svg"),
+    /* Legacy iOS */ url("../css/Gotham-Book.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../css/Gotham-Book.woff") format("woff"),
+    /* Modern Browsers */ url("../css/Gotham-Book.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  background-color: #ffffff;
+}
+.container-fluid {
+  padding: 0px;
+}
+.container {
+  max-width: 1400px;
+}
+#landing-paraiso {
+  font-family: "Gotham-Book";
+  color: #000000;
+  margin-top: -30px;
+}
+#landing-paraiso section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+/*Style*/
+ul,
+ol {
+  list-style: none;
+}
+#menu-categorias {
+  background-color: #f7f7f7;
+}
+ul.nav {
+  width: 980px;
+  margin: 0 auto;
+}
+ul.nav li {
+  float: left;
+  width: calc(100% / 4);
+  position: relative;
+}
+ul.nav li a {
+  background-color: #f7f7f7;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+ul.nav li a:hover {
+  color: #ff0000;
+}
+ul.nav li ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  width: 85%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99999999;
+}
+
+ul.nav li:hover > ul {
+  display: block;
+}
+ul.nav li ul li {
+  position: relative;
+  width: 100%;
+}
+
+ul.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+/*Bloque*/
+
+section#tratamiento .titulo,
+section#fragancias .titulo,
+section#maquillaje .titulo {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 4% 0% 3.5% 0;
+  color: #000000;
+}
+section#descubre .titulo {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 4% 0% 3.5% 0;
+  color: #000000;
+}
+
+section#tratamiento .subtitulo,
+section#fragancias .subtitulo,
+section#maquillaje .subtitulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 2% 0 0.5% 0;
+  color: #000000;
+}
+section.twosection .content-fragancia > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.list-favoritos {
+  margin-top: 0%;
+}
+
+.list-favoritos .slick-slide {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#menu-categorias .nav{
+  display: block;
+}
+
+.img-final{
+  margin-top: 2%;
+}
+/*Fin*/
+
+.retiro {
+  background-color: #f5f5f5;
+  padding: 1% 4%;
+  margin: 4% 0 0 0;
+}
+.retiro h1 {
+  text-align: center;
+  color: #872175;
+  margin-bottom: 3%;
+  font-weight: 700;
+}
+/*Sliks*/
+
+.slick-prev {
+  left: 2% !important;
+}
+.slick-next {
+  right: 2% !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 14px;
+  height: 22px;
+  z-index: 999999;
+  color: #ffffff;
+}
+.slick-disabled {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 0px;
+  color: transparent;
+}
+.slick-next,
+.slick-next:hover,
+.slick-next:focus {
+  right: 0px;
+  background: url("../images/flecha-der.png");
+}
+.slick-prev,
+.slick-prev:hover,
+.slick-prev:focus {
+  left: 0px;
+  background: url("../images/flecha-izq.png");
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 10px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.slick-dots {
+  bottom: -30px;
+}
+
+/*Fin slick*/
+
+/*Fin - Style*/
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 769px) {
+  ul.nav {
+    width: 100%;
+  }
+  #menu-categorias .nav li {
+    width: 100%;
+  }
+  #menu-categorias .nav{
+    display: none;
+  }
+  #menu-bar {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  section#tratamiento .titulo,
+  section#fragancias .titulo,
+  section#maquillaje .titulo {
+    font-size: 6vw;
+  }
+  section#tratamiento .subtitulo,
+  section#fragancias .subtitulo,
+  section#maquillaje .subtitulo {
+    font-size: 4vw;
+  }
+  section#descubre .titulo {
+    font-size: 5vw;
+  }
+  section.twosection .content-fragancia > div {
+    display: block;
+  }
+  .img-final{
+    margin-top: 10%;
+  }
+}
