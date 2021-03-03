@@ -1,30 +1,4 @@
-/* font converted using font-converter.net. thank you! */
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url("../css/Gotham-Bold.eot"); /* IE9 Compat Modes */
-  src: url("../css/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/Gotham-Bold.otf") format("opentype"),
-    /* Open Type Font */ url("../css/Gotham-Bold.svg") format("svg"),
-    /* Legacy iOS */ url("../css/Gotham-Bold.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/Gotham-Bold.woff") format("woff"),
-    /* Modern Browsers */ url("../css/Gotham-Bold.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* font converted using font-converter.net. thank you! */
-@font-face {
-  font-family: "Gotham-Book";
-  src: url("../css/Gotham-Book.eot"); /* IE9 Compat Modes */
-  src: url("../css/Gotham-Book.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/Gotham-Book.otf") format("opentype"),
-    /* Open Type Font */ url("../css/Gotham-Book.svg") format("svg"),
-    /* Legacy iOS */ url("../css/Gotham-Book.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/Gotham-Book.woff") format("woff"),
-    /* Modern Browsers */ url("../css/Gotham-Book.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600&display=swap");
 
 body,
 html {
@@ -34,10 +8,10 @@ html {
   padding: 0px;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
 }
 #landing-paraiso {
-  font-family: "Gotham-Book";
+  font-family: "Raleway", sans-serif !important;
   color: #000000;
   margin-top: -30px;
 }
@@ -53,28 +27,39 @@ ol {
   list-style: none;
 }
 #menu-categorias {
-  background-color: #f7f7f7;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
 ul.nav {
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
 }
 ul.nav li {
   float: left;
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 ul.nav li a {
-  background-color: #f7f7f7;
+  font-family: "Raleway", sans-serif;
+  background-color: none;
   color: #000000;
   text-decoration: none;
   padding: 10px 12px;
   display: block;
   text-align: center;
   font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
 }
 ul.nav li a:hover {
-  color: #ff0000;
+  color: #2a83f9;
+  background: none;
 }
 ul.nav li ul {
   display: none;
@@ -103,65 +88,125 @@ ul.nav li ul li ul {
 
 /*Bloque*/
 
-section#tratamiento .titulo,
-section#fragancias .titulo,
-section#maquillaje .titulo {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  margin: 4% 0% 3.5% 0;
-  color: #000000;
-}
-section#descubre .titulo {
+section#about-us .titulo,
+section#service .titulo,
+section#projects .titulo,
+section#customers .titulo,
+section#contact .titulo {
+  font-family: "Raleway", sans-serif;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
-  margin: 4% 0% 3.5% 0;
+  margin: 4% 0% 1% 0;
   color: #000000;
 }
 
-section#tratamiento .subtitulo,
-section#fragancias .subtitulo,
-section#maquillaje .subtitulo {
+/*Section Nuestros Servicios*/
+section#service .description {
   text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 2% 0 0.5% 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   color: #000000;
 }
-section.twosection .content-fragancia > div {
+.list-name-of-service {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 3.5% 0;
 }
-.list-favoritos {
-  margin-top: 0%;
+.list-name-of-service>div{
+  margin: 1.5% 0;
+}
+.list-name-of-service a {
+  text-align: center;
+}
+section#service .img-service > img {
+  max-width: 140px;
+  margin: 0 auto;
 }
 
-.list-favoritos .slick-slide {
-  padding-left: 5px;
-  padding-right: 5px;
+section#service .inf-service h3{
+  font-family: "Raleway", sans-serif;
+  margin: 2% 0;
+  font-size: 20px;
+  font-weight: 600;
 }
-#menu-categorias .nav{
-  display: block;
-}
+/**/
 
-.img-final{
-  margin-top: 2%;
+/*Contactenos*/
+#contact{
+   background-image: url('../images/contactenos/fondo.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:top;
+   position: relative;
+}
+#contact::before{
+  content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+section#contact>.container{
+  position: relative;
+  z-index: 99999;
+}
+section#contact .titulo{
+  color: #ffffff;
+}
+section#contact .container-section{
+  margin-top: 5%;
+}
+section#contact .datos-contacto{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section#contact .datos-contacto li{
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+section#contact .mensaje-contact{
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+#form-enviar{
+   background-color: #2a83f9;
+    border: 1px solid #2a83f9;
+    color: #fff!important;
+    padding: 10px 35px;
+}
+/*Footer*/
+#footer{
+
+}
+#footer .content-footer{
+  border-top: 1px solid #e9ebfe;
+  padding: 40px 0;
+}
+#footer .content-footer p{
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+#footer .content-footer p>strong{
+  color:#2a83f9;
 }
 /*Fin*/
 
-.retiro {
-  background-color: #f5f5f5;
-  padding: 1% 4%;
-  margin: 4% 0 0 0;
-}
-.retiro h1 {
-  text-align: center;
-  color: #872175;
-  margin-bottom: 3%;
-  font-weight: 700;
-}
 /*Sliks*/
 
 .slick-prev {
@@ -230,7 +275,7 @@ a:focus {
   #menu-categorias .nav li {
     width: 100%;
   }
-  #menu-categorias .nav{
+  #menu-categorias .nav {
     display: none;
   }
   #menu-bar {
@@ -257,7 +302,7 @@ a:focus {
   section.twosection .content-fragancia > div {
     display: block;
   }
-  .img-final{
+  .img-final {
     margin-top: 10%;
   }
 }
