@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("#sliderPrincipal").owlCarousel({
+/*$("#sliderPrincipal").owlCarousel({
       items: 1,
       autoPlay: true,
       navigation: false,
@@ -12,10 +12,10 @@ $("#sliderPrincipal").owlCarousel({
       itemsDesktopSmall: [991, 1], // betweem 900px and 601px
       itemsTablet: [768, 1], //2 items between 600 and 0
       itemsMobile: [479, 1]
-  });
+  });*/
 
     /*Slider Principal*/
-    var ancho = $(window).width();
+   /* var ancho = $(window).width();
     var res_boli = false;
     var res_flec = true;
     if(ancho < 1000){
@@ -34,7 +34,7 @@ $("#sliderPrincipal").owlCarousel({
         itemsDesktopSmall: [991, 3], // betweem 900px and 601px
         itemsTablet: [768, 3], //2 items between 600 and 0
         itemsMobile: [479, 2]
-    });
+    });*/
 
 
 

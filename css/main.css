@@ -189,9 +189,51 @@ section#contact .mensaje-contact{
     padding: 10px 35px;
 }
 /*Footer*/
-#footer{
-
+#footer .titulo h4{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 10% 0;
+  color: #2a83f9;
 }
+#footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer ul li{
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #8495ad;
+}
+#footer ul li a{
+  color: #8495ad;
+}
+
+.redes-sociales{
+  margin: 20px -5px 0!important;
+  list-style: none;
+  padding: 0;
+}
+.redes-sociales li{
+  display: inline-block;
+  padding: 0 5px;
+}
+.redes-sociales li a{
+  display: block;
+  background-color: #2a83f9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ffffff !important;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 #footer .content-footer{
   border-top: 1px solid #e9ebfe;
   padding: 40px 0;
@@ -201,6 +243,7 @@ section#contact .mensaje-contact{
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 18px;
+  color: #8495ad;
 }
 #footer .content-footer p>strong{
   color:#2a83f9;
