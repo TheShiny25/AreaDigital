@@ -26,11 +26,27 @@ ul,
 ol {
   list-style: none;
 }
+
+#logo-principal{
+  text-align: center;
+}
+#logo-principal img{
+  max-height: 80px;
+}
+
 #menu-categorias {
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 99;
+  transition: 0.4s;
+}
+.efecto-banner{
+  box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  /* -webkit-box-shadow: 0 2px 2px rgb(0 0 0 / 15%); */
+  -ms-box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  -o-box-shadow: 0 2px 2px rgba(0,0,0,.15);
 }
 ul.nav {
   width: 100%;
@@ -56,6 +72,8 @@ ul.nav li a {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
+  font-weight: bold;
+  transition: 0.4s;
 }
 ul.nav li a:hover {
   color: #2a83f9;
@@ -154,7 +172,7 @@ section#service .inf-service h3{
 }
 section#contact>.container{
   position: relative;
-  z-index: 99999;
+  z-index: 9;
 }
 section#contact .titulo{
   color: #ffffff;

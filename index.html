@@ -20,16 +20,27 @@
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
+    <style>
+        .sticky2 {
+            position: fixed!important;
+            top: 0px !important;
+            left: 0;
+            width: 100%;
+            z-index: 9999999999999;
+            background-color: #ffffff;
+            transition: 0.4s;
+          }
+    </style>
 </head>
 
 <body>
-    <section id="landing-perfumerias-unidas" class="rclandinAct">
+    <section id="landing-Area-Digital" class="rclandinAct">
 
         <section id="menu-categorias">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        Logo Principal
+                    <div id="logo-principal" class="col-lg-4">
+                        <img src="images/logo-principal.png" alt="">
                     </div>
                     <div class="col-lg-8">
                         <div id="menu-bar" class="hidden-lg hidden-md hidden-sm">
@@ -70,63 +81,43 @@
                 <p class="description">Te ofrecemos todo lo que necesitas para adaptar tu empresa a la <strong>era digital</strong> y asegurar tu éxito dentro del mercado.</p>
                 <div class="container-section">
                     <div class="row list-name-of-service">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-12">
                             <a href="#">
                                 <div class="img-service">
                                     <img class="img-responsive" src="images/service/1.png" alt="service - " style="width: 100%;">
                                 </div>
                                 <div class="inf-service">
-                                    <h3>Servicio 1</h3>
+                                    <h3>Diseño Web</h3>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-12">
                             <a href="#">
                                 <div class="img-service">
                                     <img class="img-responsive" src="images/service/2.png" alt="service - " style="width: 100%;">
                                 </div>
                                 <div class="inf-service">
-                                    <h3>Servicio 1</h3>
+                                    <h3>Desarrollo Web</h3>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-12">
                             <a href="#">
                                 <div class="img-service">
                                     <img class="img-responsive" src="images/service/3.png" alt="service - " style="width: 100%;">
                                 </div>
                                 <div class="inf-service">
-                                    <h3>Servicio 1</h3>
+                                    <h3>Posicionamiento Web (Seo / Sem)</h3>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-12">
                             <a href="#">
                                 <div class="img-service">
                                     <img class="img-responsive" src="images/service/4.png" alt="service - " style="width: 100%;">
                                 </div>
                                 <div class="inf-service">
-                                    <h3>Servicio 1</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="img-service">
-                                    <img class="img-responsive" src="images/service/5.png" alt="service - " style="width: 100%;">
-                                </div>
-                                <div class="inf-service">
-                                    <h3>Servicio 1</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <div class="img-service">
-                                    <img class="img-responsive" src="images/service/6.png" alt="service - " style="width: 100%;">
-                                </div>
-                                <div class="inf-service">
-                                    <h3>Servicio 1</h3>
+                                    <h3>Experiencia de Usuarios - UI/UX</h3>
                                 </div>
                             </a>
                         </div>
@@ -339,13 +330,13 @@
                         </div>
                         <ul>
                             <li>
-                                <span>Servicio 1</span>
+                                <span>Diseño Web</span>
                             </li>
                             <li>
-                                <span>Servicio 1</span>
+                                <span>Desarrollo Web</span>
                             </li>
                             <li>
-                                <span>Servicio 1</span>
+                                <span>Posicionamiento Web</span>
                             </li>
                         </ul>
                     </div>
@@ -355,14 +346,14 @@
                         </div>
                         <ul>
                             <li>
+                                <span>User Experience (UX)</span>
+                            </li>
+                            <!--<li>
                                 <span>Servicio 1</span>
                             </li>
                             <li>
                                 <span>Servicio 1</span>
-                            </li>
-                            <li>
-                                <span>Servicio 1</span>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -380,5 +371,23 @@
     <script src="js/send_data.js"></script>
     <script src="js/owl/main.js"></script>
     <script src="js/owl/owl.min.js"></script>
+    <script type="text/javascript">
+        window.onscroll = function(){ boxesScroll(); };
+        function boxesScroll() {
+            var offset = $('#landing-Area-Digital').offset().top + 80
+            if (window.pageYOffset >= offset) {
+                $('#menu-categorias').addClass("efecto-banner");
+                $('#menu-categorias').css({"background-color":"#ffffff"});
+                $('ul.nav li a').css({"color":"#000000"});
+                $('#logo-principal img').attr('src','images/logo-principal-color.png');
+            } else {
+                $('#menu-categorias').removeClass("efecto-banner");
+                $('#menu-categorias').css({"background-color":"transparent"});
+                $('ul.nav li a').css({"color":"#ffffff"});
+                $('#logo-principal img').attr('src','images/logo-principal.png');
+            }
+        }
+
+        </script>
 </body>
 </html>
