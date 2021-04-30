@@ -121,24 +121,23 @@ section#contact .titulo {
 }
 /*Section - Nosotros*/
 
-section#about-us .row{
+section#about-us .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
 }
-section#about-us .content-texto{
+section#about-us .content-texto {
   display: flex;
   align-items: center;
 }
-section#about-us .texto p{
+section#about-us .texto p {
   text-align: justify;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #000000;
-
 }
 /**/
 /*Section - Nuestros Servicios*/
@@ -176,7 +175,7 @@ section#service .inf-service h3 {
 /**/
 /*Section - Nuestros Procesos*/
 
-#processes .row{
+#processes .row {
   padding-bottom: 80px;
 }
 #processes article {
@@ -207,7 +206,7 @@ section#service .inf-service h3 {
   font-weight: 500;
   color: #000000;
 }
-#processes .texto h3{
+#processes .texto h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   color: #000000;
@@ -316,6 +315,17 @@ section#contact .mensaje-contact {
   text-align: justify;
   margin-bottom: 5%;
 }
+section#contact .text_consentimiento{
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+section#contact .text_consentimiento input{
+  margin-right: 10px;
+}
+
 #form-enviar {
   background-color: #2a83f9;
   border: 1px solid #2a83f9;
@@ -341,6 +351,7 @@ section#contact .mensaje-contact {
   font-weight: 500;
   font-size: 16px;
   color: #8495ad;
+  margin-left: 5px;
 }
 #footer ul li a {
   color: #8495ad;
@@ -446,40 +457,122 @@ a:focus {
 }
 
 @media screen and (max-width: 769px) {
+  #menu-categorias{
+    background-color: #ffffff;
+  }
+  #logo-principal{
+    text-align: center;
+    min-height: 80px;
+  }
+  #logo-principal>img{
+    margin-top: 20px;
+  }
   ul.nav {
     width: 100%;
   }
+  #menu-categorias .container{
+    width: 90%;
+  }
   #menu-categorias .nav li {
     width: 100%;
+    height: auto;
+  }
+  #menu-categorias .nav li a{
+    width: 100%;
+    border: 1px solid #cccc;
+    padding: 15px 20px;
   }
   #menu-categorias .nav {
     display: none;
+    margin-bottom: 10%;
   }
   #menu-bar {
-    height: 40px;
-    line-height: 40px;
+    height: 80px;
+    line-height: 80px;
     width: 100%;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
+    text-align: right;
+
+  }
+  section#sliderPrincipal{
+    padding-top: 80px;
+  }
+  section#about-us .row {
+    flex-wrap: wrap-reverse;
+  }
+  section#about-us .texto p {
+    font-size: 3.8vw;
+    margin: 3% 0%;
   }
 
-  section#tratamiento .titulo,
-  section#fragancias .titulo,
-  section#maquillaje .titulo {
-    font-size: 6vw;
+  section#about-us .titulo,
+  section#service .titulo,
+  section#processes .titulo,
+  section#projects .titulo,
+  section#customers .titulo,
+  section#contact .titulo {
+    font-size: 6.5vw;
+    margin: 3% 0;
   }
-  section#tratamiento .subtitulo,
-  section#fragancias .subtitulo,
-  section#maquillaje .subtitulo {
+  section#service .description {
+    font-size: 3.8vw;
+    margin: 0 0 2% 0;
+  }
+  section#service .inf-service h3 {
     font-size: 4vw;
   }
-  section#descubre .titulo {
-    font-size: 5vw;
+  section#service .img-service > img {
+    padding: 10%;
   }
-  section.twosection .content-fragancia > div {
-    display: block;
+  #processes .numero {
+    margin-bottom: 3%;
   }
-  .img-final {
-    margin-top: 10%;
+  #processes .texto {
+    margin: 2% auto;
+  }
+  #processes .texto h3 {
+    font-size: 4vw;
+  }
+  #processes .texto p {
+    margin: 0;
+    min-height: 120px;
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  #processes article:nth-child(1):before,
+  #processes article:nth-child(2):before,
+  #processes article:nth-child(4):before {
+    width: 100%;
+  }
+  #processes article:nth-child(2):after,
+  #processes article:nth-child(3):before,
+  #processes article:nth-child(5):after,
+  #processes article:nth-child(6):after {
+    width: 100%;
+  }
+  section#contact .datos-contacto li{
+    font-size: 3.8vw;
+  }
+  section#contact .mensaje-contact{
+    font-size: 3.8vw;
+  }
+  section#contact .text_consentimiento{
+    font-size: 3.8vw;
+  }
+  .boton_enviar{
+    margin-bottom: 10%;
+  }
+  #footer .logo{
+    margin: 1.5% auto;
+  }
+  #footer .titulo h4{
+    font-size: 4vw;
+  }
+  #footer ul li{
+    font-size: 3.5vw;
+  }
+  #footer ul.redes-sociales{
+    text-align: center;
   }
 }
